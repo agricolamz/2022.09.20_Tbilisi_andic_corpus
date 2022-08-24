@@ -41,7 +41,7 @@ Created with `lingtypology` [@moroz2017]
 
 ## What do we need in order to create oral corpus of Andi?
 
-# Andic data
+# \color{colorwhite} Andic data
 
 ## Andic data
 
