@@ -1,10 +1,14 @@
 ---
 title: "A corpus of Andi field recordings"
-author: "George Moroz¹, Elena Sokur, Samira Verhees², Aigul Zakirova²"
-institute: "¹ Linguistic Convergence Laboratory, NRU HSE; ²Independent researhcer"
+author: |
+        | Samira Verhees¹ 
+        | Aigul Zakirova²
+        | George Moroz²
+        | Elena Sokur²
+institute: "¹Independent researhcer, Netherlands; ²HSE University, Russia"
 date: |
-    | 20 September 2022
-    | name of the conference
+      | 20 September 2022
+      | Tbilisi, VI International Conference: Language and Modern Technologies
 output: 
   beamer_presentation:
     df_print: kable
@@ -27,26 +31,32 @@ library(extrafont)
 theme_set(theme_bw()+theme(text = element_text(size = 20, family = "Brill")))
 ```
 
-# \color{colorwhite} Andic language
+# \color{colorwhite} Corpora of Linguistic Convergence Laboratory
+
+# \color{colorwhite} Developing Andic corpus
 
 ## Andic Language
+
+Andi (Andic < Avar-Andic < East Caucasian, glottocode [andi1255]) is spoken in several villages of the Botlikh district of Dagestan. In addition, some speakers of Andi have resettled to the lowlands and cities in other districts of Dagestan. I will call the idiom spoken in the village of Andi Andi proper and reserve the term Andi for the whole range of Andi dialects. Overall, the total number of Andi speakers is estimated by [@aglarov02: 3] as more than 20,000. The All-Russian National Census conducted in 2010 provides similar numbers.
+
 
 ![](images/01_map.png)
 
 Created with `lingtypology` [@moroz2017]
 
-# \color{colorwhite} Lab's corpora
-
-## Typology
-
-## What do we need in order to create oral corpus of Andi?
-
-# \color{colorwhite} Andic data
+\setcounter{footnote}{0}
 
 ## Andic data
 
-* number of hours
-* number of annotated tokens
+|                      |            Andi           |     Rikvani     |    Gagatli   |     Zilo     |
+|----------------------|:-------------------------:|:---------------:|:------------:|:------------:|
+| materials            | [@kibrik1988; @alekseev99] | [@suleymanov57] | [@salimov10] | [@kayefurth] |
+| grammar sketch       |             +             |        +        |       +      |       +      |
+| dictionary           |             +             |        -        |       ±      |       ±      |
+| morphological parser |±\footnote[frame]{We started development of morpholoical parser in (Buntyakova 2022).}             |        -        |       -      |       -      |
+
+\setcounter{footnote}{0}
+\nocite{buntyakova22}
 
 ## Problems
 
