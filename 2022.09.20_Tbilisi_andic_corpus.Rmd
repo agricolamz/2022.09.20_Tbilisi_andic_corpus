@@ -5,7 +5,7 @@ author: |
         | Aigul Zakirova²
         | George Moroz²
         | Elena Sokur²
-institute: "¹Independent researhcer, Netherlands; ²HSE University, Russia"
+institute: "¹Independent researcher, the Netherlands; ²HSE University, Russia"
 date: |
       | 20 September 2022
       | Tbilisi, VI International Conference: Language and Modern Technologies
@@ -33,11 +33,15 @@ theme_set(theme_bw()+theme(text = element_text(size = 20, family = "Brill")))
 
 # \color{colorwhite} Corpora of Linguistic Convergence Laboratory
 
-# \color{colorwhite} Developing Andic corpus
+# \color{colorwhite} Developing the corpus of Andi
 
-## Andic Language
+## The Andi Language: a sociolinguistic background
 
-Andi (Andic < Avar-Andic < East Caucasian, glottocode [andi1255]) is spoken in several villages of the Botlikh district of Dagestan. In addition, some speakers of Andi have resettled to the lowlands and cities in other districts of Dagestan. I will call the idiom spoken in the village of Andi Andi proper and reserve the term Andi for the whole range of Andi dialects. Overall, the total number of Andi speakers is estimated by [@aglarov02: 3] as more than 20,000. The All-Russian National Census conducted in 2010 provides similar numbers.
+< Avar-Andic < East Caucasian, glottocode [andi1255]
+spoken in several villages of the Botlikh district of Dagestan. 
+more than 20,000 speakers of Andi (@aglarov02, All-Russian National Census 2010)
+Andi speakers are trilingual in Andi, Avar and Russian
+Avar serves as a lingua franca and is taught in school (Dobrushina et al. 2017)
 
 
 ![](images/01_map.png)
@@ -53,12 +57,35 @@ Created with `lingtypology` [@moroz2017]
 | materials            | [@kibrik1988; @alekseev99] | [@suleymanov57] | [@salimov10] | [@kayefurth] |
 | grammar sketch       |             +             |        +        |       +      |       +      |
 | dictionary           |             +             |        -        |       ±      |       ±      |
-| morphological parser |±\footnote[frame]{We started development of morpholoical parser in (Buntyakova 2022).}             |        -        |       -      |       -      |
+| morphological parser |±\footnote[frame]{A pilot version of a morpholoical parser of Andi is presented in (Buntyakova 2022).}             |        -        |       -      |       -      |
 
 \setcounter{footnote}{0}
-\nocite{buntyakova22}
 
 ## Problems
+
+- Andi has several dialects and no cross-dialectal standard;
+    - no full-fledged dictionary 
+    - no full-fledged grammatical parser (though see a first attempt in [@buntyakova22])
+- Our recorded data are heterogeneous 
+    - different dialects
+    - different conventions 
+    - different file formats 
+- Due to our limited knowledge of the Andi dialects, sometimes we do not know what the correct analysis of a given word form is.
+ 
+## Solutions
+
+The material has to be converted to a singular format using `phonfieldwork` [@moroz20]. For the Andi dialectal corpus the pipeline is as follows: 
+
+- we preprocess the annotation files, converting them to ELAN `.eaf` format [@wittenburg06], 
+- align them with the sound
+- gloss them manually or correct mistakes and ambiguities left by morphological parser
+- publish online using the Tsakorpus platform (Arkhangelskiy 2019)
+- repeat all previous steps
+
+## Solutions (2)
+a unified and relatively flexible system of morphological annotation has been developed
+we have assigned the same gloss to formally different morphemes that we analyze as dialectal correspondences
+When we are not sure about the morphological analysis, we plan to mark it in a separate tier, so that the “dubious” status of some annotations is accessible through search.
 
 # \color{colorwhite} Conclusions
 
