@@ -5,7 +5,8 @@ author: |
         | George Moroz¹
         | Elena Sokur¹
         | Samira Verhees²
-institute: "¹HSE University, Russia; ²Independent researcher, the Netherlands"
+        | Neige Rochant³
+institute: "¹HSE University, Russia; ²Independent researcher, the Netherlands; ³Sorbonne Nouvelle University / CNRS"
 date: |
       | 20 September 2022
       | Tbilisi, VI International Conference: Language and Modern Technologies
@@ -104,8 +105,7 @@ Created with `lingtypology` [@moroz2017]
 
 |                      |            Andi           |     Rikvani     |    Gagatli   |     Zilo     |
 |----------------------|:-------------------------:|:---------------:|:------------:|:------------:|
-| sources              | [@kibrik1988; @alekseev99];| [@suleymanov57] | [@salimov10] | [@kayefurth] |
-|                      | [@dirr1906]; [@tsertsvadze65]|            |              |              |
+| sources              | [@kibrik88; @alekseev99; @dirr06; @tsertsvadze65];| [@suleymanov57] | [@salimov10] | [@kayefurth] |
 | grammar sketch       |             +             |        +        |       +      |       +      |
 | dictionary           |             +             |        -        |       ±      |       ±      |
 | morphological parser |±\footnote[frame]{A pilot version of a morphological parser of Andi is presented in (Buntyakova 2022).}             |        -        |       -      |       -      |
@@ -120,8 +120,10 @@ Created with `lingtypology` [@moroz2017]
 \pause
 - Recordings were made my different researchers, with different approaches to recording and processing
 \pause
-- How many hours do we have?
-- How much is annotated?
+- We have approximately 8.27 hours of recordings
+    - 7.77 hours is transcribed
+    - 3 hours are aligned with sound
+    - 17.35 minutes are fully glossed
 
 ## Problems
 
