@@ -1,11 +1,11 @@
 ---
 title: "A corpus of Andi field recordings"
 author: |
-        | Samira Verhees¹ 
-        | Aigul Zakirova²
-        | George Moroz²
-        | Elena Sokur²
-institute: "¹Independent researcher, the Netherlands; ²HSE University, Russia"
+        | Aigul Zakirova¹
+        | George Moroz¹
+        | Elena Sokur¹
+        | Samira Verhees²
+institute: "¹HSE University, Russia; ²Independent researcher, the Netherlands"
 date: |
       | 20 September 2022
       | Tbilisi, VI International Conference: Language and Modern Technologies
@@ -104,17 +104,24 @@ Created with `lingtypology` [@moroz2017]
 
 |                      |            Andi           |     Rikvani     |    Gagatli   |     Zilo     |
 |----------------------|:-------------------------:|:---------------:|:------------:|:------------:|
-| materials            | [@kibrik1988; @alekseev99] | [@suleymanov57] | [@salimov10] | [@kayefurth] |
+| sources              | [@kibrik1988; @alekseev99];| [@suleymanov57] | [@salimov10] | [@kayefurth] |
+|                      | [@dirr1906]; [@tsertsvadze65]|            |              |              |
 | grammar sketch       |             +             |        +        |       +      |       +      |
 | dictionary           |             +             |        -        |       ±      |       ±      |
-| morphological parser |±\footnote[frame]{A pilot version of a morpholoical parser of Andi is presented in (Buntyakova 2022).}             |        -        |       -      |       -      |
+| morphological parser |±\footnote[frame]{A pilot version of a morphological parser of Andi is presented in (Buntyakova 2022).}             |        -        |       -      |       -      |
 
 \setcounter{footnote}{0}
 
 ## Andic data
 
+- Written texts from grammar sketches, some with translation
+- Field recordings from 1 trip to Rikvani, a few trips to Muni and Kwankhidatli, and several trips to Zilo
+- Especially the Kwankhidatli dialect is endangered; only known record is a few short texts in [@tsertsvadze65]
+\pause
+- Recordings were made my different researchers, with different approaches to recording and processing
+\pause
 - How many hours do we have?
-- How many is annotated?
+- How much is annotated?
 
 ## Problems
 
