@@ -25,24 +25,74 @@ editor_options:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, dev='cairo_pdf')
 options(tinytex.verbose = TRUE)
-
-library(tidyverse)
-library(extrafont)
-theme_set(theme_bw()+theme(text = element_text(size = 20, family = "Brill")))
 ```
 
+## Outline of the talk
+
+- Corpora of Linguistic Convergence Laboratory
+- An example of Meadow Mari corpus
+- Andi language and its data
+- Our path towards the corpus
+
 # \color{colorwhite} Corpora of Linguistic Convergence Laboratory
+
+## Corpora of Linguistic Convergence Laboratory: http://lingconlab.ru/
+
+* Russian Dialect corpora (14)
+* Corpora of Bilingual Russian (7)
+* Corpora of minority languages of Russia (6)
+
+## Corpora of Linguistic Convergence Laboratory: http://lingconlab.ru/
+
+```{r, out.width="88%"}
+knitr::include_graphics("images/02_dialect_corpora.png")
+```
+
+## Corpora of Linguistic Convergence Laboratory: http://lingconlab.ru/
+
+```{r, out.width="100%"}
+knitr::include_graphics("images/03_bilingual_russian.png")
+```
+
+## Corpora of Linguistic Convergence Laboratory: http://lingconlab.ru/
+
+```{r, out.width="100%"}
+knitr::include_graphics("images/04_minority_languages.png")
+```
+
+## Example of [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
+
+```{r, out.width="85%"}
+knitr::include_graphics("images/05_corpus_example.png")
+```
+
+## Example of [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
+
+- translation
+- glosses
+- audio/video
+- export to `.xlsx`
+- sociolinguistic information
+
+## Example of required ELAN `.eaf` file
+
+```{r, out.width="100%"}
+knitr::include_graphics("images/06_elan_examples.png")
+```
+
+- hierarchy of tiers
+- time alignment
+- stem forms
 
 # \color{colorwhite} Developing the corpus of Andi
 
 ## The Andi Language: a sociolinguistic background
 
-< Avar-Andic < East Caucasian, glottocode [andi1255]
-spoken in several villages of the Botlikh district of Dagestan. 
-more than 20,000 speakers of Andi (@aglarov02, All-Russian National Census 2010)
-Andi speakers are trilingual in Andi, Avar and Russian
-Avar serves as a lingua franca and is taught in school (Dobrushina et al. 2017)
-
+- Andic < Avar-Andic < East Caucasian, glottocode [andi1255]
+- spoken in several villages of the Botlikh district of Dagestan. 
+- more than 20,000 speakers of Andi [@aglarov02; All-Russian National Census 2010]
+- Andi speakers are trilingual in Andi, Avar and Russian
+- Avar serves as a lingua franca and is taught in school [@dobrushina17]
 
 ![](images/01_map.png)
 
@@ -84,11 +134,13 @@ The material has to be converted to a singular format using `phonfieldwork` [@mo
 - we preprocess the annotation files, converting them to ELAN `.eaf` format [@wittenburg06], 
 - align them with the sound
 - gloss them manually or correct mistakes and ambiguities left by morphological parser
-- publish online using the Tsakorpus platform (Arkhangelskiy 2019)
+- publish online using the Tsakorpus platform [@arkhangelskiy19]
 - repeat all previous steps
 
 # \color{colorwhite} Conclusions
 
 ## Conclusions:
+
+# \color{colorwhite} Thank you for your attention!
 
 # References {.allowframebreaks}
