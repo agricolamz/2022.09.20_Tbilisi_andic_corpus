@@ -61,6 +61,11 @@ Created with `lingtypology` [@moroz2017]
 
 \setcounter{footnote}{0}
 
+## Andic data
+
+- How many hours do we have?
+- How many is annotated?
+
 ## Problems
 
 - Andi has several dialects and no cross-dialectal standard;
@@ -81,11 +86,6 @@ The material has to be converted to a singular format using `phonfieldwork` [@mo
 - gloss them manually or correct mistakes and ambiguities left by morphological parser
 - publish online using the Tsakorpus platform (Arkhangelskiy 2019)
 - repeat all previous steps
-
-## Solutions (2)
-a unified and relatively flexible system of morphological annotation has been developed
-we have assigned the same gloss to formally different morphemes that we analyze as dialectal correspondences
-When we are not sure about the morphological analysis, we plan to mark it in a separate tier, so that the “dubious” status of some annotations is accessible through search.
 
 # \color{colorwhite} Conclusions
 
