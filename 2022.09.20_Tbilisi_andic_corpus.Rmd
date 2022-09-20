@@ -31,9 +31,9 @@ options(tinytex.verbose = TRUE)
 ## Outline of the talk
 
 - Corpora of Linguistic Convergence Laboratory
-- An example of Meadow Mari corpus
-- Andi language and its data
-- Our path towards the corpus
+- Corpora of minority languages of Russia: the Meadow Mari corpus
+- The Andi language and the descriptive data available
+- Our path towards the corpus and the challenges we have faced
 
 # \color{colorwhite} Corpora of Linguistic Convergence Laboratory
 
@@ -66,8 +66,10 @@ knitr::include_graphics("images/04_minority_languages.png")
 - Meadow Mari < Mari < Finno-Ugric < Uralic
 - spoken in the Mari El republic and adjacent areas
 - ~360.000 speakers (2010 Census)
-- endangered, Educational (Ethnologue)
+- endangered (Ethnologue)
+- written and taught in school
 - relatively well-described: grammars, e.g. (Pengitov et al. 1961, Alhoniemi 1993), dictionaries, e.g. http://marlamuter.com/ru/ 
+- several written corpora, e.g. http://corp.marnii.ru/# and http://meadow-mari.web-corpora.net/index_en.html
 \pause
 - texts come from the village of Staryj Torjal, Mari El republic
 
@@ -84,13 +86,13 @@ knitr::include_graphics("images/04_minority_languages.png")
 - Timofey Arkhangelskiy
 - Elena Sokur
 
-## Example of [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
+## An example from the [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
 
 ```{r, out.width="85%"}
 knitr::include_graphics("images/05_corpus_example.png")
 ```
 
-## Example of [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
+## An example from the [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
 
 - created with Tsakorpus [@arkhangelskiy19]
 - translation (into Russian)
@@ -99,7 +101,7 @@ knitr::include_graphics("images/05_corpus_example.png")
 - export to `.xlsx`
 - sociolinguistic information
 
-## Example of required ELAN `.eaf` file
+## An example of a required ELAN `.eaf` file
 
 ```{r, out.width="100%"}
 knitr::include_graphics("images/06_elan_examples.png")
@@ -107,7 +109,7 @@ knitr::include_graphics("images/06_elan_examples.png")
 
 - hierarchy of tiers
 - time alignment
-- stem forms
+- lemmatization
 
 ## Pipeline used for the Meadow Mari corpus
 
@@ -123,10 +125,13 @@ knitr::include_graphics("images/06_elan_examples.png")
 ## The Andi Language: a sociolinguistic background
 
 - Andic < Avar-Andic < East Caucasian, glottocode [andi1255]
-- spoken in several villages of the Botlikh district of Dagestan. 
+- spoken in several villages of the Botlikh district of Dagestan (Upper dialects: Andi, Rikvani, Gagatli, Zilo, Chanko, Gunkha, Lower dialects: Kvankhidatli, Muni). 
 - more than 20,000 speakers of Andi [@aglarov02; All-Russian National Census 2010]
+- rarely written (e.g. almost no books or newspapers, but Andi is used in messengers)
+\pause
 - Andi speakers are trilingual in Andi, Avar and Russian
-- Avar serves as a lingua franca and is taught in school [@dobrushina17]
+- Avar serves as a lingua franca in the area and is taught in school [@dobrushina17]
+- Andi speakers write using the Avar alphabeth
 
 ![](images/01_map.png)
 
@@ -141,15 +146,15 @@ Created with `lingtypology` [@moroz2017]
 | sources              | [@kibrik88; @alekseev99; @dirr06; @tsertsvadze65];| [@suleymanov57] | [@salimov10] | [@kayefurth] |
 | grammar sketch       |             +             |        +        |       +      |       +      |
 | dictionary           |             +             |        -        |       ±      |       ±      |
-| morphological parser |±\footnote[frame]{A pilot version of a morphological parser of Andi is presented in (Buntyakova 2022).}             |        -        |       -      |       -      |
+| morphological parser |±\footnote[frame]{A first version of a morphological parser of Andi is presented in (Buntyakova 2022).}             |        -        |       -      |       -      |
 
 \setcounter{footnote}{0}
 
 ## Andic data
 
 - Written texts from grammar sketches, some with translation
-- Field recordings from 1 trip to Rikvani, a few trips to Muni and Kwankhidatli, and several trips to Zilo
-- Especially the Kwankhidatli dialect is endangered; only known record is a few short texts in [@tsertsvadze65]
+- Field recordings from 1 trip to Rikvani, a few trips to Muni and Kvankhidatli, and several trips to Zilo
+- Especially the Kvankhidatli dialect is endangered; only known record is a few short texts in [@tsertsvadze65]
 \pause
 - Recordings were made my different researchers, with different approaches to recording and processing
 \pause
@@ -161,19 +166,26 @@ Created with `lingtypology` [@moroz2017]
 ## Problems
 
 - Andi has several dialects and no cross-dialectal standard;
-    - no full-fledged dictionary (though see word lists in grammars of Gagatli and Rikvani)
-    - no full-fledged grammatical parser (though see a first attempt in [@buntyakova22])
-- Our recorded data are heterogeneous 
+    - no full-fledged dictionary (but there exist word lists in Sulejmanov 1961, Salimov 2010, Kibrik, Kodzasov 1990)
+    - no full-fledged morphological analyzer (but there exists a first attempt in [@buntyakova22])
+- Our recorded data are heterogeneous: 
     - different dialects
     - different conventions 
     - different file formats 
 - Due to our limited knowledge of the Andi dialects, sometimes we do not know what the correct analysis of a given word form is.
  
+## Morphological analyzer
+
+[@buntyakova22]: 
+
+- analyzes nominal morphology;
+- works for the Andi dialect (based on word lists in Kibrik, Kodzasov 1990)
+\pause
+- for two test corpora, the analyzer was able to analyze 7.6% ~ 13.8% tokens (due to the fact that the analyzer only processes nominal morphology + there are different spelling conventions in corpora).
+
 ## Plans
 
 - collect an extensive word list for Zilo;
-- create a morphological parser for Zilo;
-\pause
 - convert the material to a singular format using `phonfieldwork` [@moroz20];
 
 ## Plans
@@ -183,16 +195,16 @@ Created with `lingtypology` [@moroz2017]
 - gloss them manually;
 - publish online using the Tsakorpus platform [@arkhangelskiy19];
 - repeat all previous steps, adding more audio files.
-\pause
-- optionally, continue developing the morphological parser
-- should it be cross-dialectal?
+\pause 
+- at the same time, continue developing the morphological analyzer of Upper Andi.
+
 
 # \color{colorwhite} Conclusions
 
 ## Conclusions:
 
 - For a better-described language, we were able to use a morphological parser;
-- For underdescribed languages, such as Andi, we still need to find the optimal way.
+- For underdescribed languages, such as Andi, we still need to find the optimal way to develop the corpus, the dictionary and the parser.
 
 # \color{colorwhite} Thank you for your attention!
 
