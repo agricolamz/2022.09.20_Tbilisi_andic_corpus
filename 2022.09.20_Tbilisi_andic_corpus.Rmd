@@ -61,6 +61,29 @@ knitr::include_graphics("images/03_bilingual_russian.png")
 knitr::include_graphics("images/04_minority_languages.png")
 ```
 
+## [The spoken corpus of Meadow Mari](http://lingconlab.ru/spoken_meadow_mari/)
+
+- Meadow Mari < Mari < Finno-Ugric < Uralic
+- spoken in the Mari El republic and adjacent areas
+- ~360.000 speakers (2010 Census)
+- endangered, Educational (Ethnologue)
+- relatively well-described: grammars, e.g. (Pengitov et al. 1961, Alhoniemi 1993), dictionaries, e.g. http://marlamuter.com/ru/ 
+\pause
+- texts come from the village of Staryj Torjal, Mari El republic
+
+## [The spoken corpus of Meadow Mari](http://lingconlab.ru/spoken_meadow_mari/): credits
+
+- Anna Volkova
+- Aigul Zakirova
+- Mikhail Voronov
+- Maria Dolgodvorova
+- Zinaida Klyucheva
+- Svetlana Kokoreva
+- Ilya Makarchuk
+- Irina Khomchenkova
+- Timofey Arkhangelskiy
+- Elena Sokur
+
 ## Example of [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
 
 ```{r, out.width="85%"}
@@ -69,9 +92,10 @@ knitr::include_graphics("images/05_corpus_example.png")
 
 ## Example of [Meadow Mari corpus](http://lingconlab.ru/spoken_meadow_mari/)
 
-- translation
+- created with Tsakorpus [@arkhangelskiy19]
+- translation (into Russian)
 - glosses
-- audio/video
+- audio
 - export to `.xlsx`
 - sociolinguistic information
 
@@ -84,6 +108,15 @@ knitr::include_graphics("images/06_elan_examples.png")
 - hierarchy of tiers
 - time alignment
 - stem forms
+
+## Pipeline used for the Meadow Mari corpus
+
+- transcribing the texts by a native speaker of Meadow Mari;
+- aligning sound and transcription in ELAN;
+- proofreading of the texts by linguists;
+- automatic glossing of texts with the help of [a morphological analyzer](https://github.com/timarkh/uniparser-grammar-meadow-mari)
+- modifying the analyzer (adding dialect-specific morphemes, correcting mistakes in the previous version of the analyzer)
+- manually removing homonymy left after the morphological analysis.
 
 # \color{colorwhite} Developing the corpus of Andi
 
@@ -121,14 +154,14 @@ Created with `lingtypology` [@moroz2017]
 - Recordings were made my different researchers, with different approaches to recording and processing
 \pause
 - We have approximately 8.27 hours of recordings
-    - 7.77 hours is transcribed
+    - 7.77 hours are transcribed
     - 3 hours are aligned with sound
     - 17.35 minutes are fully glossed
 
 ## Problems
 
 - Andi has several dialects and no cross-dialectal standard;
-    - no full-fledged dictionary 
+    - no full-fledged dictionary (though see word lists in grammars of Gagatli and Rikvani)
     - no full-fledged grammatical parser (though see a first attempt in [@buntyakova22])
 - Our recorded data are heterogeneous 
     - different dialects
@@ -136,19 +169,30 @@ Created with `lingtypology` [@moroz2017]
     - different file formats 
 - Due to our limited knowledge of the Andi dialects, sometimes we do not know what the correct analysis of a given word form is.
  
-## Solution
+## Plans
 
-The material has to be converted to a singular format using `phonfieldwork` [@moroz20]. For the Andi dialectal corpus the pipeline is as follows: 
+- collect an extensive word list for Zilo;
+- create a morphological parser for Zilo;
+\pause
+- convert the material to a singular format using `phonfieldwork` [@moroz20];
 
-- we preprocess the annotation files, converting them to ELAN `.eaf` format [@wittenburg06], 
-- align them with the sound
-- gloss them manually or correct mistakes and ambiguities left by morphological parser
-- publish online using the Tsakorpus platform [@arkhangelskiy19]
-- repeat all previous steps
+## Plans
+
+- preprocess the annotation files, converting them to ELAN `.eaf` format [@wittenburg06];
+- align them with the sound;
+- gloss them manually;
+- publish online using the Tsakorpus platform [@arkhangelskiy19];
+- repeat all previous steps, adding more audio files.
+\pause
+- optionally, continue developing the morphological parser
+- should it be cross-dialectal?
 
 # \color{colorwhite} Conclusions
 
 ## Conclusions:
+
+- For a better-described language, we were able to use a morphological parser;
+- For underdescribed languages, such as Andi, we still need to find the optimal way.
 
 # \color{colorwhite} Thank you for your attention!
 
